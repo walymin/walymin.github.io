@@ -5,7 +5,7 @@ header-img: img/home-bg-o.jpg
 email: walymin@sina.cn
 description: "Every failure is leading towards success."
 keyword: "Admin, AD Blog, Admin的博客, walymin, 王小米, Android,小程序,JS"
-url: "http://walymin.github.io"          # your host, for absolute URL
+url: "https://walymin.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/walymin/walymin.github.io.git" # you code repository
 
