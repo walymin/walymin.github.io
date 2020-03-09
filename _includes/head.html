@@ -10,31 +10,39 @@
     <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
 
     <!-- Web App Manifest -->
-    <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json">
-
+    <!-- 这里是浏览器的加号，点一下可以生成chrome应用 没什么卵用-->
+    <!-- <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json"> -->
+    
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
-
+    <!-- <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico"> -->
+    <link rel="shortcut icon" href="https://github-io-blog-static-file.oss-cn-shanghai.aliyuncs.com/ico/favicon.ico">
+   
     <!-- Safari Webpage Icon    by-BY -->
-    <link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png"> -->
+    <link rel="apple-touch-icon" href="https://github-io-blog.oss-cn-shanghai.aliyuncs.com/github-blog/blog-assets-img-2020/apple-touch-icon.png?x-oss-process=style/q_80">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
-
+    <!-- <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}"> -->
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/hux-blog.min.css" | prepend: site.baseurl }}">
+    <!-- <link rel="stylesheet" href="{{ "/css/hux-blog.min.css" | prepend: site.baseurl }}"> -->
+    <link rel="stylesheet" href="https://github-io-blog-static-file.oss-cn-shanghai.aliyuncs.com/css/hux-blog.min.css">
 
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
+    <!-- Pygments Github CSS 2020-03-08 12:52:05 use highLight.js in foot.html-->
+    <!-- <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}"> -->
+
+    <!-- use highLight.js -->
+    <link href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/atom-one-dark.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <!-- Hux change font-awesome CDN to qiniu -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+    <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Hux Delete, sad but pending in China
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>

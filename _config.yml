@@ -1,7 +1,7 @@
 # Site settings
 title: "Admin"
 SEOTitle: 王小米的博客 | BY Blog
-header-img: img/home-bg-o.jpg
+header-img: img/home-bg-header.jpg  # 已hardcode,此配置没用
 email: walymin@sina.cn
 description: "Every failure is leading towards success."
 keyword: "Admin, AD Blog, Admin的博客, walymin, 王小米, Android,小程序,JS"

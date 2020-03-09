@@ -6,13 +6,17 @@ layout: default
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
+
+
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
+        /* background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}') */
+        background-image: url('{% if page.header-img contains "https" %}{{ page.header-img }}{% else %}{{ site.baseurl }}/{{ page.header-img }}{% endif %}')
     }
 
+    /* 这是图片上面覆盖的背景，好让文字在图片上面更好的显示 ，header-mask 的可以是0.1 ～ 1 ，0.5表示半透明*/
     {% if page.header-mask %}
     header.intro-header .header-mask{
         width: 100%;

@@ -280,3 +280,7 @@ ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名
 
 遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/qiubaiying/qiubaiying.github.io/blob/master/LICENSE)。
 
+
+
+这个是jekyll 的语法：
+https://segmentfault.com/a/1190000011503030
