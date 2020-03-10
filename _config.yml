@@ -12,7 +12,7 @@ github_repo: "https://github.com/walymin/walymin.github.io.git" # you code repos
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "You are every single day!"   #莫道桑榆晚 <br> 为霞尚满天
-sidebar-avatar: /img/avatar-667x500.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://github-io-blog.oss-cn-shanghai.aliyuncs.com/github-blog/blog-avatar-img-2020/avatar-me-667x500.jpeg?x-oss-process=style/q_80      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
