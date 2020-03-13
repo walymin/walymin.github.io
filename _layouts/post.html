@@ -16,6 +16,12 @@ layout: default
         background-image: url('{% if page.header-img contains "https" %}{{ page.header-img }}{% else %}{{ site.baseurl }}/{{ page.header-img }}{% endif %}')
     }
 
+    ul.friends-list-inline{
+        padding-left: 15px;
+        /* margin-left: -5px; */
+        /* list-style: square inside url('/i/eg_arrow.gif') */
+    }
+
     /* 这是图片上面覆盖的背景，好让文字在图片上面更好的显示 ，header-mask 的可以是0.1 ～ 1 ，0.5表示半透明*/
     {% if page.header-mask %}
     header.intro-header .header-mask{
@@ -164,7 +170,7 @@ layout: default
                 {% if site.friends %}
                 <hr>
                 <h5>FRIENDS</h5>
-                <ul class="list-inline">
+                <ul class="friends-list-inline">
                     {% for friend in site.friends %}
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}

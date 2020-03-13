@@ -2,6 +2,16 @@
 layout: default
 ---
 
+<!-- page Header -->
+<style type="text/css">
+    ul.friends-list-inline{
+        padding-left: 15px;
+        /* margin-left: -5px; */
+        /* list-style: square inside url('/i/eg_arrow.gif') */
+    }
+
+</style>
+
 <!-- Page Header -->
 <!-- <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')"> -->
 <header class="intro-header" style="background-image: url('{{ page.header-img }}')">
@@ -57,8 +67,8 @@ layout: default
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
+                <h5>ABOUT FRIENDS</h5>
+                <ul class="friends-list-inline">
                     {% for friend in site.friends %}
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}
@@ -198,8 +208,8 @@ layout: default
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
+                <h5>ABOUT FRIENDS</h5>
+                <ul class="friends-list-inline">
                     {% for friend in site.friends %}
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}

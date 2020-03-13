@@ -18,6 +18,11 @@ layout: default
         height: 100%;
         border: 0;
     }
+    ul.friends-list-inline{
+        padding-left: 15px;
+        /* margin-left: -5px; */
+        /* list-style: square inside url('/i/eg_arrow.gif') */
+    }
     /* Override Nav Style */
     {% if page.navcolor == "invert" %}
         .navbar-custom .nav li a,
@@ -146,8 +151,8 @@ layout: default
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
+                <h5>ABOUT FRIENDS</h5>
+                <ul class="friends-list-inline">
                     {% for friend in site.friends %}
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}
