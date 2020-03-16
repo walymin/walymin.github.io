@@ -91,7 +91,7 @@ featured-condition-size: 0              # 相同标签数量大于这个数，�
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
-service-worker: false   # 这里使用service-worker 微信里面会用不了，这个网站是service-worker的学习：https://zhuanlan.zhihu.com/p/20040372
+service-worker: true   # 这里使用service-worker 微信里面会用不了，这个网站是service-worker的学习：https://zhuanlan.zhihu.com/p/20040372
 
 
 
